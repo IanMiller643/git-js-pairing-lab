@@ -150,3 +150,55 @@ const getExtention = (string) => {
     return myString = string.slice(place);
 };
 console.log(getExtention('cheetah.lol'))
+
+
+
+
+
+
+
+
+
+//Problem 14
+const absoluteNineteen = (n) => {
+    return Math.abs(n - 19);
+}
+
+console.log(absoluteNineteen(5));
+
+
+//Problem 15
+const switchLetters = (word) => {
+    const firstChar = word[0];
+    const lastChar = word[word.length - 1];
+    const midChars = word.substring(1, word.length - 1);
+    const newWord = lastChar + midChars + firstChar;
+
+    console.log(newWord);
+}
+switchLetters("Bobby");
+
+
+//Problem 16
+const changeString = (word) => {
+    let newWord = '';
+    const abcs = 'abcdefghijklmnopqrstuvwxyz';
+    const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+    for (let i = 0; i < word.length; i++) {
+        for (let j = 0; j < abcs.length; j++) {
+            if (word[i] === abcs[j]) {
+                newWord += abcs[j + 1];
+            }
+            else if (word[i] === upper[j]) {
+                newWord += upper[j + 1];
+            }
+        }
+
+    }
+    console.log(newWord);
+}
+changeString("Turkey");
+
+
+
