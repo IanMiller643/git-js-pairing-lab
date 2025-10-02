@@ -133,13 +133,6 @@ console.log(leapYear(2025))
 console.log(leapYear(2028))
 
 //Problem 13
-//const getExtension = () => {
-// let myString = '';
-// for (let i = 0; i <= myString; i++) {
-
-//}
-//}
-
 const getExtention = (string) => {
     let myString = '';
     let character = '.';
@@ -150,13 +143,6 @@ const getExtention = (string) => {
     return myString = string.slice(place);
 };
 console.log(getExtention('cheetah.lol'))
-
-
-
-
-
-
-
 
 
 //Problem 14
